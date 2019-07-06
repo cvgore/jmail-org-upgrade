@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name         	jmail
+// @namespace    	https://github.com/cvgore/jmail-ovh-upgrade
+// @version      	0.1
+// @description  	Add full mail copy
+// @author      	cvgore
+// @match       	http*://www.jmail.ovh/*
+// @grant       	none
+// @updateURL 		https://github.com/cvgore/jmail-ovh-upgrade/raw/master/jmail.user.js
+// @downloadURL 	https://github.com/cvgore/jmail-ovh-upgrade/raw/master/jmail.user.js
+// ==/UserScript==
+
 (function() {
     'use strict';
 
@@ -15,7 +27,7 @@
     let elFullMailBoxInputGroup = document.createElement('DIV');
     let elCopyMailWrapper = document.createElement('SPAN');
     let elCopyMailBtn = document.createElement('BUTTON');
-   
+
     elCopyMailWrapper.className = 'input-group-btn';
     elCopyMailBtn.className = 'btn btn-success';
     elCopyMailBtn.innerText = 'Copy';
